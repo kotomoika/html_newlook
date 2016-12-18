@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/favicon.png">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			var margin = $("#row").height() - $(".bottom").height();
+			$(".bottom").css("marginTop", margin);
+
+			var hcenterWidth = $(".photos .hcenter").width();
+			var glyphWidth = $("#left_glyph").width();
+			$(".new_collection .hcenter").css("maxWidth", hcenterWidth + glyphWidth * 2 + 52);
+
+			var jeansH = $("#jeans").height();
+			var parentW = $("#bag").parent().width();
+			var bagHeight = $("#bag").height();
+			var shoesHeight = $("#shoes").height();
+			var width = $("#bag").width();
+			$("#bag").css("marginTop", (jeansH - bagHeight) / 2);
+			$("#bag").css("marginLeft", (parentW - width) / 2);
+			$("shoes").css("marginTop", (jeansH - shoesHeight) / 2 );
+			$("shoes").css("marginLeft", (parentW - width) / 2 );
+
+			$("#left_glyph").css( "paddingTop", jeansH / 2 - $("#left_glyph").height() / 2 );
+			$("#right_glyph").css( "paddingTop", jeansH / 2 - $("#left_glyph").height() / 2 );
+
+			$(".glyphicon-search").click(function() {
+				$("header input").toggle();
+			});
+
+			$("#jeans").on({
+				mouseenter: function() {
+					$("#jeans_default").hide(1, function(){
+						$("#jeans_chosen").show();
+					});
+				},
+				mouseleave: function() {
+					$("#jeans_chosen").hide(1, function(){
+						$("#jeans_default").show();
+					});
+				}
+			});
+
+
+		});
+		
+	</script>
+</head>
+<body>
+	<header>
+		<div class="hcenter parent">
+			<div class="row child">
+				<div class="col-md-6 col-sm-6" style="padding-left: 0;">
+					<div class="right_border" style="padding-left: 0;">
+					<img src="images/usa.png" alt="flag">
+					(USA) 
+					<a href="#">
+						<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+					</a>
+					</div>
+					<div style="display: inline; padding: 0 10px;">WELCOME, &nbsp;&nbsp;<i>Please &nbsp;&nbsp; <a href="#"><u>Sign in.</u></a></i>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6" style="text-align: right; padding-right:0px">
+					<input type="text" placeholder="Search">
+					<div class="right_border"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> (4) </div>
+					<div class="right_border"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> (1) </div>
+					<div style="display: inline; padding: 0 0 0 10px">$14.99</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="hcenter first_menu">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<p>free delivery over &pound;45*</p>
+				<p>free next day delivery over &pound;65</p>
+			</div>
+			<div class="col-md-4 col-sm-4 name">
+				<h1>NEW LOOK</h1>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<p class="text_right">free returns*</p>
+				<p class="text_right">free click &amp; collect over &pound;19.99</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="hcenter">
+		<div class="row menu">
+			<div class="col-md-12">
+				<ul>
+					<li><a href="#">new in</a></li>
+					<li><a href="#">womens</a></li>
+					<li><a href="#">shoes &amp; accessories</a></li>
+					<li><a href="#">maternity</a></li>
+					<li><a href="#">plus size</a></li>
+					<li><a href="#">mens</a></li>
+					<li><a href="#">teens</a></li>
+					<li><a href="#">trend</a></li>
+					<li style="text-align: right; padding-right:0px"><a href="#">sale</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="top">
+		<div class="top_inner">
+			<p>&mdash; new collection &mdash;</p>
+			<h1>texture rich &amp; full of life</h1>
+			<button class="transparent">shop now</button>
+		</div>
+	</div>
+	<div class="second_line">
+		<div class="second_line_inner">
+			<div style="margin-left: 10%">
+				<div class="row">
+					<div class="col-md-6 col-sm-6" style="padding: 40px 15% 0 0">
+							<h2>NEW SEASON JACKET</h2>
+							<p>The perfect balance of summer fun dressed up in  luxurious suedes for any early fall adventure.</p>
+							<h1>$14.99</h1>
+							<button class="transparent">SHOP NEW IN</button>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<img src="images/girl1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="photos">
+		<div class="hcenter">
+			<div id="row" class="row">
+				<div class="col-md-3 col-sm-3 bottom">
+					<img src="images/girl3.jpg" alt="">
+				</div>
+				<div class="col-md-9 col-sm-9">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<img src="images/girl4.jpg" alt="">
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<img src="images/man.jpg" alt="">
+						</div>
+					</div>
+					<div class="row">
+						<div id="kimono" class="col-md-12 col-sm-12" style="padding-top: 15px">
+							<img src="images/girl2.jpg" alt="">
+							<button class="transparent">shop kimonos</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<h2>new collection</h2>
+	<div class="new_collection">
+		<div class="hcenter">
+			<div class="row">
+				<div id="left_glyph" class="col-md-1 col-sm-1">
+					<a href="#">
+						<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-2"><img src="images/coat.jpg" alt=""></div>
+				<div class="col-md-2 col-sm-2"><img id="bag" src="images/bag.jpg" alt=""></div>
+				<div id="jeans" class="col-md-2 col-sm-2">
+					<img id="jeans_default" src="images/jeans.jpg" alt="">
+					<img id="jeans_chosen" src="images/jeans_chosen.jpg" alt="">
+				</div>
+				<div class="col-md-2 col-sm-2"><img id="shoes" src="images/shoes.jpg" alt=""></div>
+				<div class="col-md-2 col-sm-2"><img src="images/dress.jpg" alt=""></div>
+				<div id="right_glyph" class="col-md-1 col-sm-1">
+					<a href="#">
+						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="guide">
+		<div class="hcenter">
+			<div class="row">
+				<div class="col-md-6 col-sm-6" style="padding: 50px;"><img class="right" src="images/map.jpg" alt=""></div>
+				<div class="col-md-6 col-sm-6">
+					<div class="store">
+						<h3>STORE LOCATOR</h3>
+						<p>Select a store in your country on the map</p>
+						<button class="transparent">VISIT STORE LOCATOR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="hcenter">
+			<div class="row parent footer1">
+				<div class="col-md-3  col-sm-3 child">
+					<h4>SIGN UP FOR EMAIL</h4>
+				</div>
+				<div class="col-md-4  col-sm-4 child">
+					<input type="email" placeholder="Enter your email adress">
+				</div>
+				<div class="col-md-2 col-sm-2 child">
+					<button type="submit"><img src="images/mail.png" alt=""> SIGN UP</button>
+				</div>
+				<div class="col-md-3 col-sm-3 child" style="text-align: center;">
+					<p>Click &amp; Collect.<br>
+					<small>Buy online. Collect in store.</small></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="hcenter">
+				<div class="row parent">
+					<div class="col-md-9 col-sm-9 child">
+						<ul>
+							<li><a href="#">custom care</a></li>
+							<li><a href="#">delivery &amp; returns</a></li>
+							<li><a href="#">cards &amp; discounts</a></li>
+							<li><a href="#">company info</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-3 child">
+						<p><small>&copy; New Look Retailers Limited.</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>
