@@ -6,7 +6,7 @@ body {
 }
 
 * {
-	outline: none;
+    outline: none;
 }
 
 .name h1 {
@@ -17,8 +17,8 @@ body {
 }
 
 h2 {
-	text-transform: uppercase;
-	text-align: center;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .parent {
