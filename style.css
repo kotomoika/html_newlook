@@ -1,21 +1,24 @@
-html,body {
+html,
+body {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-h1 {
-	font-size: 30pt !important;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0 !important;
+* {
+	outline: none;
+}
+
+.name h1 {
+    font-size: 30pt;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
 }
 
 h2 {
-	font-size: 30pt;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 10px 0 30px !important;
 }
 
 .parent {
@@ -25,333 +28,353 @@ h2 {
 }
 
 .child {
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
     float: none;
 }
 
 .hcenter {
-	margin: 0 auto;
-	max-width: 80%;
-	height: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
 }
+
 .wrapper {
-	display: table;
-	height: 100%;
-	width: 100%;
+    display: table;
+    height: 100%;
+    width: 100%;
 }
+
 .vcenter {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-} 
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
 
 header {
-	height: 50px;
-	border-bottom: solid 1px #adadad;
-	font-weight: bold;
-	cursor: pointer;
+    height: 50px;
+    border-bottom: solid 1px #adadad;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-header a:link, header a:hover, header a:visited, header a:active {
-	color: #000;
-	text-decoration: none;
-} 
+header a:link,
+header a:hover,
+header a:visited,
+header a:active {
+    color: #000;
+    text-decoration: none;
+}
 
 header .glyphicon {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 header input {
-	border:none;
-	border-bottom: 1px solid #000;
-	display: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    display: none;
 }
 
-header input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-weight: normal;
-  font-style: italic;
+header input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-weight: normal;
+    font-style: italic;
 }
-header input::-moz-placeholder { /* Firefox 19+ */
-  font-weight: normal;
-  font-style: italic;
+
+header input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: normal;
+    font-style: italic;
 }
-header input:-ms-input-placeholder { /* IE 10+ */
-  font-weight: normal;
-  font-style: italic;
+
+header input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-weight: normal;
+    font-style: italic;
 }
-header input:-moz-placeholder { /* Firefox 18- */
-  font-weight: normal;
-  font-style: italic;
+
+header input:-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: normal;
+    font-style: italic;
 }
 
 .cell {
-	display: inline;
+    display: inline;
 }
 
 .right {
-	float: right;
+    float: right;
 }
 
 .outer_cell {
-	display: inline-block;
-	border-right: solid 2px;
-	height: 100%;
+    display: inline-block;
+    border-right: solid 2px;
+    height: 100%;
 }
 
 .right_border {
-	border-right: solid 2px;
-	display: inline;
+    border-right: solid 2px;
+    display: inline;
 }
 
 .no_border {
-	border: none;
+    border: none;
 }
 
 .right_border {
-	border-right: solid 2px;
-	padding: 0 10px;
+    border-right: solid 2px;
+    padding: 0 10px;
 }
+
 .name {
-	text-align: center;
+    text-align: center;
 }
+
 .text_right {
-	text-align: right;
+    text-align: right;
 }
 
 .first_menu {
-	margin-top: 20px;
-	text-transform: uppercase;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .first_menu p {
-	opacity: 0.4;
-	font-weight: bold;
+    opacity: 0.4;
+    font-weight: bold;
 }
 
 .menu {
-	margin: 20px 0 10px;
+    margin: 20px 0 10px;
 }
 
 .menu ul {
-	list-style-type: none;
-	padding-left: 0;
-	display: table;
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: bold;
-	cursor: pointer;
+    list-style-type: none;
+    padding-left: 0;
+    display: table;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .menu li {
-	display: table-cell;
-	padding-right: 20px;
+    display: table-cell;
+    padding-right: 20px;
 }
 
-.menu a:link, a:visited {
-	text-decoration: none;
-	color: #000 !important;
+.menu a:link,
+.menu a:visited {
+    text-decoration: none;
+    color: #000;
 }
 
-.menu a:hover, a:active {
-	text-decoration: none;
-	color: #a7443f !important;
+.menu a:hover,
+.menu a:active {
+    text-decoration: none;
+    color: #a7443f;
 }
 
 .top_inner {
-	min-height: 500px;
-	padding-top: 230px;
+    min-height: 500px;
+    padding-top: 230px;
 }
 
 .top {
-	background: url(images/top.jpg) no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
+    background: url(images/top.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .top h1 {
-	font-size: 30pt !important;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 30px 0 30px !important;
+    font-size: 30pt;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0 30px;
 }
 
 .top button.transparent {
-	border-color: #fff;
+    border-color: #fff;
 }
 
 .top p {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 .second_line_inner {
-	min-height: 350px;
+    min-height: 350px;
 }
 
 .second_line {
-	background: url(images/bg.jpg) no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	text-align: center;
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    text-align: center;
 }
 
 .second_line button.transparent {
-	opacity: 1;
+    opacity: 1;
 }
 
 .second_line p {
-	font-style: italic;
-	opacity: 0.8;
-	font-weight: bold;
+    font-style: italic;
+    opacity: 0.8;
+    font-weight: bold;
 }
 
 .second_left {
-	width: 20%;
-	display: inline-block;
+    width: 20%;
+    display: inline-block;
 }
 
 .photos {
-	padding: 50px 0;
+    padding: 50px 0;
 }
 
 #kimono button {
-	position: absolute;
+    position: absolute;
     bottom: 10px;
     left: 40%;
     color: #fff;
     opacity: 0.8;
 }
 
-.photos img, .new_collection img {
-	width: 100%;
+.photos img,
+.new_collection img {
+    width: 100%;
 }
 
 .new_collection {
-	background-color: #f7f7f7;
-	height: 100%;
-	margin: 0 auto;
+    background-color: #f7f7f7;
+    height: 100%;
+    margin: 0 auto;
 }
 
 #jeans_chosen {
-	display: none;
+    display: none;
 }
 
 .new_collection .hcenter {
-	max-width: 96%;
+    max-width: 96%;
 }
 
 #left_glyph {
-	text-align: right;
-	/*padding-top: 100px;*/
+    text-align: right;
 }
 
 #right_glyph {
-	padding-top: 150px;
+    padding-top: 150px;
 }
 
 .new_collection .glyphicon {
-	font-size: 30pt;
-	color: #4b4d4d;
-	opacity: 0.6;
+    font-size: 30pt;
+    color: #4b4d4d;
+    opacity: 0.6;
 }
 
 button.transparent {
-	background-color: transparent;
-	border: 2px solid #999999;
-	padding: 10px 40px;
-	margin: 20px 0 !important;
-	font-weight: bold !important;
-	opacity: 0.6;
-	text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #999999;
+    padding: 10px 40px;
+    opacity: 0.6;
+    text-transform: uppercase;
 }
 
 .guide {
-	background-color: #f7f7f7;
-	margin: 40px 0;
-	color: #999999;
+    background-color: #f7f7f7;
+    margin: 40px 0;
+    color: #999999;
 }
 
-.guide p, h3 {
-	opacity: 0.6;
+.guide p,
+h3 {
+    opacity: 0.6;
 }
 
 .guide p {
-	padding: 20px 0;
-	font-style: italic;
-	font-weight: bold;
+    padding: 20px 0;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .guide img {
-	width: 90%;
+    width: 90%;
 }
 
 .store {
-	padding: 30px 0 0 50px;
-	text-align: center;
+    padding: 30px 0 0 50px;
+    text-align: center;
 }
 
 .inliner {
-	display: inline-block;
+    display: inline-block;
 }
 
 footer {
-	border-top: 1px solid #adadad;
-	text-transform: uppercase;
-	cursor: pointer;
+    border-top: 1px solid #adadad;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 footer p {
-	font-style: italic;
-	text-transform: none;
-	font-weight: bold;
+    font-style: italic;
+    text-transform: none;
+    font-weight: bold;
 }
 
 footer small {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
-footer input, footer button {
-	width: 100%;
-	height: 50px;
+footer input,
+footer button {
+    width: 100%;
+    height: 50px;
 }
 
 footer input {
-	border: 2px solid #adadad;
-	border-radius: 3px;
+    border: 2px solid #adadad;
+    border-radius: 3px;
+    text-indent: 15px;
 }
 
-footer input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  padding-left: 20px;
-  font-style: italic;
+footer input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-style: italic;
 }
-footer input::-moz-placeholder { /* Firefox 19+ */
-  padding-left: 20px;
-  font-style: italic;
+
+footer input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: italic;
 }
-footer input:-ms-input-placeholder { /* IE 10+ */
-  padding-left: 20px;
-  font-style: italic;
+
+footer input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-style: italic;
 }
-footer input:-moz-placeholder { /* Firefox 18- */
-  padding-left: 20px;
-  font-style: italic;
+
+footer input:-moz-placeholder {
+    /* Firefox 18- */
+    font-style: italic;
 }
 
 footer button {
-	border: none;
-	background-color: #1a0000;
-	color: #c6c0c0;
+    border: none;
+    background-color: #1a0000;
+    color: #c6c0c0;
 }
 
 footer img {
-	margin-right: 5px;
+    margin-right: 5px;
 }
 
 footer .footer1 {
-	padding: 40px 0;
+    padding: 40px 0;
 }
 
 footer h4 {
@@ -359,51 +382,59 @@ footer h4 {
 }
 
 .footer {
-	background-color: #1a0000;
-	color: #c6c0c0;
+    background-color: #1a0000;
+    color: #c6c0c0;
 }
 
 .footer p {
-	margin: 10px 0;
-	font-style: normal;
-	text-align: right;
+    margin: 10px 0;
+    font-style: normal;
+    text-align: right;
 }
 
 .footer p small {
-	opacity: 1;
+    opacity: 1;
 }
 
 .footer ul {
-	list-style-type: none;
-	padding-left: 0;
-	display: table;
-	width: 100%;
-	margin: 10px 0;
+    list-style-type: none;
+    padding-left: 0;
+    display: table;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .footer li {
-	display: table-cell;
-	padding-right: 20px;
+    display: table-cell;
+    padding-right: 20px;
 }
 
-.footer a:link, a:visited, a:active, a:hover {
-	text-decoration: none;
-	color: #5d5e5e !important;
+.footer a:link,
+.footer a:visited,
+.footer a:active,
+.footer a:hover {
+    text-decoration: none;
+    color: #5d5e5e;
 }
 
 @media only screen and (max-width: 1050px) {
-	.first_menu, .menu, footer {
-		font-size: 8pt;
-	}
-	
-	h1 {font-size: 20pt !important;}
+    .first_menu,
+    .menu,
+    footer {
+        font-size: 8pt;
+    }
+    .name h1 {
+        font-size: 20pt;
+    }
 }
 
 @media only screen and (max-width: 860px) {
-	.first_menu, .menu, footer {
-		font-size: 6pt;
-	}
-	header {
-		font-size: 8pt;
-	}
+    .first_menu,
+    .menu,
+    footer {
+        font-size: 6pt;
+    }
+    header {
+        font-size: 8pt;
+    }
 }
